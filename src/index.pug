@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+   link(href='/css/style.css', rel='stylesheet')
+  body
+  .container
+    .login
+      .login-triangle
+        h2.login-header Log in
+        form.login-container
+          p
+            input(type='text' placeholder="Name" )
+          p
+            span.username_error.error  Username is missing.....
+          p
+            input(type='email' placeholder='Email' class="email")
+          p
+            span.email_error.error Email is missing.....
+          p
+            input(type='password' placeholder='Password' class="pass")
+          p
+          span.pass_error.error Password is missing.....
+          p
+            input(type='submit' value='Log in' class="submit")
+
+          script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+          script(src='/js/script.js')
